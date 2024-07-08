@@ -1,0 +1,147 @@
+body{
+    background: black;
+}
+#face{
+    height: 200px;
+    width: 200px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background: rgb(255, 0, 212);
+    margin: auto;
+    margin-top: 10px;
+}
+#lhand,#rhand{
+    height: 100px;
+    width: 25px;
+    background: rgb(255, 0, 212);
+    margin-top: 15px;
+    border-radius: 50px;
+}
+#center{
+    height: 190px; ;
+    width: 190px;
+    background: rgb(255, 0, 191);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+}
+#boby{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 15px;
+
+}
+#leye,#reye{
+    height: 25px;
+    width: 25px;
+    border-radius: 500%;
+    background: black;
+    
+}
+legs{
+    background: rgb(255, 0, 191);
+
+}
+#lleg,#rleg{
+    height: 100px; ;
+    width: 25px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    justify-content: space-evenly;
+    background: rgb(255, 0, 191);
+
+}
+#legs{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: -18px;
+}
+#eyes{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 125px;
+}
+
+#main:hover #legs{
+    width: 50px; 
+    height: 50px;
+    background: rgb(236, 11, 225));
+    border-radius: 40px;
+    animation:change 1s 10;
+}
+
+#main:hover #lhand{
+    animation:changelhand 1s 10;
+}
+@keyframes changelhand{
+    0%{
+        transform: rotate(0deg); 
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#main:hover #rhand{
+    animation:changerhand 1s 10;
+}
+@keyframes changerhand{
+    0%{
+        transform: rotate(0deg); 
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#main:hover #rleg{
+    animation:changerleg 1s 10;
+}
+@keyframes changerleg{
+    0%{
+        transform: rotate(0deg); 
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+#main:hover #center{
+    animation:changecenter 1s 10;
+}
+@keyframes changecenter{
+    0%{
+        transform: rotate(0deg); 
+    
+        transform: rotate(360deg);
+    }
+}
+
+#main:hover #lleg{
+    animation:changelleg 1s 10;
+}
+@keyframes changelleg{
+    0%{
+        transform: rotate(0deg); 
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#main:hover #face{
+    animation:changeface 1s 10;
+}
+@keyframes changeface{
+    0%{
+        transform: rotatex(350deg); 
+    }
+    
+        transform: rotatex(360deg);
+    }
